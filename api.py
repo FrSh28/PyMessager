@@ -6,11 +6,10 @@ from flask import Flask, request
 
 __author__ = 'enginebai'
 
-API_ROOT = 'api/'
+API_ROOT = '/api/'
 FB_WEBHOOK = 'fb_webhook'
 
 app = Flask(__name__)
-
 
 @app.route(API_ROOT + FB_WEBHOOK, methods=["GET"])
 def fb_webhook():
